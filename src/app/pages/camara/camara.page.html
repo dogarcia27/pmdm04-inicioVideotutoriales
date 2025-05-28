@@ -1,5 +1,13 @@
 <app-page-header titulo="Cámara"></app-page-header>
 
 <ion-content>
+    <ion-button (click)="onClick()">Sacar foto</ion-button>
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="4" *ngFor="let url of arrayUrl">
+                <ion-img [src]="url"></ion-img>
 
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
